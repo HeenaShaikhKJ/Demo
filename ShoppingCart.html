@@ -1,0 +1,515 @@
+<html>
+<head>
+<title>Shpping cart</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="mycss.css">
+<!--<script src="myscript.js"></script>-->
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+	<div class="col-sm-3" id="item" style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk1" onclick="addorder()"/></center>
+	<img src="images/img1.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Item1</li>
+		<li>Description: Birthday cake</li>
+		<li>Price:100</li>
+		<li>Qty:<input type="text" id="t1" size="10"/></li>
+	</ul>
+	</div>
+	<div class="col-sm-3" id="item" style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk1" onclick="addorder2()"/></center>
+	<img src="images/img2.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item2</li>
+		<li>Description:</li>
+		<li>Price:200</li>
+		<li>Qty:<input type="text" id="t2" size="10"/></li>
+	</ul>
+	</div>
+	<div class="col-sm-3" id="item" style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk1" onclick="addorder3()" /></center>
+	<img src="images/img3.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item3</li>
+		<li>Description:</li>
+		<li>Price:300</li>
+		<li>Qty:<input type="text" id="t3" size="10"/></li>
+	</ul>
+	</div>
+	<div class="col-sm-3" id="item"  style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk1" onclick="addorder4()"/></center>
+	<img src="images/img4.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item4</li>
+		<li>Description:</li>
+		<li>Price:400</li>
+		<li>Qty:<input type="text" id="t4" size="10"/></li>
+	</ul>
+	</div>
+ </div>	
+
+
+ <div class="row">
+	<div class="col-sm-3" class="items" id="item"  style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk5" onclick="addorder5()"/></center>
+	<img src="images/img5.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item5</li>
+		<li>Description: Birthday cake</li>
+		<li>Price:500</li>
+		<li>Qty:<input type="text" id="t5" size="10"/></li>
+	</ul>
+	</div>
+	<div class="col-sm-3"  id="item" style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk6" onclick="addorder6()"/></center>
+	<img src="images/img6.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item6</li>
+		<li>Description:</li>
+		<li>Price:600</li>
+		<li>Qty:<input type="text" id="t6" size="10"/></li>
+	</ul>
+	</div>
+	<div class="col-sm-3" id="item"  style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk7" onclick="addorder7()"/></center>
+	<img src="images/img7.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item7</li>
+		<li>Description:</li>
+		<li>Price:700</li>
+		<li>Qty:<input type="text" id="t7" size="10"/></li>
+	</ul>
+	</div>
+	<div class="col-sm-3"id="item"  style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk8" onclick="addorder8()"/></center>
+	<img src="images/img8.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item8</li>
+		<li>Description:</li>
+		<li>Price:800</li>
+		<li>Qty:<input type="text" id="t8" size="10"/></li>
+	</ul>
+	</div>
+ </div>
+  <div class="row">
+	<div class="col-sm-3" id="item"  class="items" style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk9" onclick="addorder9()"/></center>
+	<img src="images/img9.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item9</li>
+		<li>Description: Birthday cake</li>
+		<li>Price:900</li>
+		<li>Qty:<input type="text" id="t9" size="10"/></li>
+	</ul>
+	</div>
+	<div class="col-sm-3" id="item" style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk10" onclick="addorder10()"/></center>
+	<img src="images/img10.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item10</li>
+		<li>Description:</li>
+		<li>Price:1000</li>
+		<li>Qty:<input type="text" id="t10" size="10"/></li>
+	</ul>
+	</div>
+	<div class="col-sm-3" id="item" style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk1" onclick="addorder11()"/></center>
+	<img src="images/img11.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item11</li>
+		<li>Description:</li>
+		<li>Price:100</li>
+		<li>Qty:<input type="text" id="t11" size="10"/></li>
+	</ul>
+	</div>
+	<div class="col-sm-3" id="item"  style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk12" onclick="addorder12()"/></center>
+	<img src="images/img12.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item12</li>
+		<li>Description:</li>
+		<li>Price:200</li>
+		<li>Qty:<input type="text" id="t12" size="10"/></li>
+	</ul>
+	</div>
+ </div>
+  <div class="row">
+	<div class="col-sm-3" id="item"  class="items" style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk13" onclick="addorder13()"/></center>
+	<img src="images/img13.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item13</li>
+		<li>Description: Birthday cake</li>
+		<li>Price:300</li>
+		<li>Qty:<input type="text" id="t13" size="10"/></li>
+	</ul>
+	</div>
+	<div class="col-sm-3" id="item" style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk14" onclick="addorder14()"/></center>
+	<img src="images/img14.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item14</li>
+		<li>Description:</li>
+		<li>Price:400</li>
+		<li>Qty:<input type="text" id="t14" size="10"/></li>
+	</ul>
+	</div>
+	<div class="col-sm-3" id="item"  style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk15" onclick="addorder15()"/></center>
+	<img src="images/img15.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Item15</li>
+		<li>Description:</li>
+		<li>Price:<input type="text" value="500" id="p15" readonly></li>
+		<li>Qty:<input type="text" id="t15" size="10" /></li>
+	</ul>
+	</div>
+	<div class="col-sm-3" id="item" style="border:1px solid black;">
+	<br/>
+	<center><input type="checkbox" name="chk16" onclick="addorder16()"/></center>
+	<img src="images/img16.jpg" class="img" width="320px" height="200px" style="padding:10px";/>
+	<ul>
+		<li>Name:Item16</li>
+		<li>Description:</li>
+		<li>Price:<input type="text" value="600" id="p16" readonly></li>
+		<li>Qty:<input type="text" id="t16" size="10"/></li>
+	</ul>
+	</div>
+	
+<hr/>
+<div class="row">
+		<div class="col-sm-12">
+		<h3>Ordered Items </h3>
+		<ol id="colist">
+		</ol>
+<hr/>
+		<button type="button" onclick="totalAmount()" style="background:blue">Total Amount for Shopping</button>
+        </div>	
+</div>
+	
+	
+	
+	
+	
+	
+	
+ </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+
+function addorder()
+{
+	//name = document.getElementById("nm").value;
+	qty = document.getElementById("t1").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item1")
+	var itemdetail = document.createTextNode("Item1"+" "+100+" "+qty+" "+(100*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	//document.getElementById("itemname").value = ""
+	document.getElementById("t1").value = 0
+}	
+
+function addorder2()
+{
+	qty = document.getElementById("t2").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item2")
+	var itemdetail = document.createTextNode("Item2"+" "+200+" "+qty+" "+(200*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t2").value = 0
+}	
+function addorder3()
+{
+	qty = document.getElementById("t3").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item3")
+	var itemdetail = document.createTextNode("Item3"+" "+300+" "+qty+" "+(300*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t3").value = 0
+}	
+function addorder4()
+{
+	qty = document.getElementById("t4").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item4")
+	var itemdetail = document.createTextNode("Item4"+" "+400+" "+qty+" "+(400*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t4").value = 0
+}	
+function addorder5()
+{
+	qty = document.getElementById("t5").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item5")
+	var itemdetail = document.createTextNode("Item5"+" "+500+" "+qty+" "+(500*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t5").value = 0
+}	
+function addorder6()
+{
+	qty = document.getElementById("t6").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item6")
+	var itemdetail = document.createTextNode("Item6"+" "+600+" "+qty+" "+(600*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t6").value = 0
+}	
+function addorder7()
+{
+	qty = document.getElementById("t7").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item7")
+	var itemdetail = document.createTextNode("Item1"+" "+700+" "+qty+" "+(700*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t7").value = 0
+}	
+function addorder8()
+{
+	qty = document.getElementById("t8").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item8")
+	var itemdetail = document.createTextNode("Item8"+" "+800+" "+qty+" "+(800*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t8").value = 0
+}	
+function addorder9()
+{
+	qty = document.getElementById("t9").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item9")
+	var itemdetail = document.createTextNode("Item1"+" "+900+" "+qty+" "+(900*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t9").value = 0
+}	
+function addorder10()
+{
+	qty = document.getElementById("t10").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item10")
+	var itemdetail = document.createTextNode("Item10"+" "+1000+" "+qty+" "+(1000*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t10").value = 0
+	
+}	
+function addorder11()
+{
+	qty = document.getElementById("t11").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item11")
+	var itemdetail = document.createTextNode("Item11"+" "+100+" "+qty+" "+(100*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t11").value = 0
+}	
+function addorder12()
+{
+	qty = document.getElementById("t12").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item12")
+	var itemdetail = document.createTextNode("Item12"+" "+200+" "+qty+" "+(200*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t12").value = 0
+}	
+function addorder13()
+{
+	qty = document.getElementById("t13").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item13")
+	var itemdetail = document.createTextNode("Item13"+" "+300+" "+qty+" "+(300*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t13").value = 0
+}	
+function addorder14()
+{
+	qty = document.getElementById("t14").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item14")
+	var itemdetail = document.createTextNode("Item14"+" "+400+" "+qty+" "+(400*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t14").value = 0
+}	
+function addorder15()
+{
+	qty = document.getElementById("t15").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item15")
+	var itemdetail = document.createTextNode("Item15"+" "+500+" "+qty+" "+(500*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t15").value = 0
+}	
+function addorder16()
+{
+	qty = document.getElementById("t16").value;
+	if(qty <= 0)
+	{
+		alert("quantity should be more than 0")
+		return;
+	}
+	olist = document.getElementById("colist")
+	var listitem = document.createElement("LI")
+	listitem.setAttribute("id","item16")
+	var itemdetail = document.createTextNode("Item16"+" "+600+" "+qty+" "+(600*qty))
+	listitem.appendChild(itemdetail)
+	olist.appendChild(listitem)
+	document.getElementById("t16").value = 0
+}	
+
+function totalAmount()
+{ 
+var p16=document.getElementById("p16").value;
+var t16=document.getElementById("t16").value;
+var p15=document.getElementById("p15").value;
+var t15=parseInt(document.getElementById("t15").value);
+	
+	document.write(t16);
+	var t=t16+t15;
+	alert(t);
+	}
+	</script>
+	
+
+
+
+</body>
+</html>
